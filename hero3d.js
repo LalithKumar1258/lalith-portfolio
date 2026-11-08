@@ -100,8 +100,11 @@ try {
   const clock = new THREE.Clock();
   const tick = () => {
     const t = clock.getElapsedTime();
-    rig.rotation.y = reduce ? 0.4 : t * 0.12 + mx * 0.5;
-    camera.position.y = 4.2 - my * 1.5;
+    const sc = Math.min(1, scrollY / innerHeight);
+    rig.rotation.y = reduce ? 0.4 : t * 0.12 + mx * 0.5 + sc * 2.4;
+    camera.position.y = 4.2 - my * 1.5 + sc * 3;
+    camera.position.z = 12 - sc * 4;
+    rig.scale.setScalar(1 + sc * 0.15);
     camera.lookAt(0, 0, 0);
     const a = (t * 0.6) % (Math.PI * 2);
     sig.position.set(Math.sin(a) * R, -0.6, Math.cos(a) * R);
