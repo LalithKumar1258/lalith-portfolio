@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lalith Kumar U — Make AI Do Real Work</title>
+  <meta name="description" content="AI Engineer building agentic systems that do real work: AskCM multi-agent analytics, validated migrations, monitoring at warehouse scale." />
+  <meta property="og:title" content="Lalith Kumar U — Make AI Do Real Work" />
+  <meta property="og:description" content="Shipped: AskCM — business data answers in under 10 minutes instead of ~2 hours, 85% cheaper per question, 39/39 attacks refused." />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta name="theme-color" content="#080B14" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a class="logo" href="#top">LK<span>U</span></a>
+    <div class="nav-links">
+      <a href="#askcm">Shipped</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#path">Path</a>
+      <a href="#film">Film</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <svg class="signal" viewBox="0 0 1600 600" preserveAspectRatio="none" aria-hidden="true">
+      <path id="sig" d="M-40,520 C260,500 380,300 640,330 C900,360 980,120 1240,140 C1420,154 1500,60 1660,40" />
+      <circle r="9" class="sig-dot"><animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto"><mpath href="#sig" /></animateMotion></circle>
+    </svg>
+    <div class="hero-inner">
+      <div class="sticker s-lime">AI ENGINEER · GENAI &amp; AGENTIC SYSTEMS</div>
+      <h1 class="headline">
+        <span class="line"><span>MAKE AI DO</span></span>
+        <span class="line"><span class="hl">REAL WORK.</span></span>
+      </h1>
+      <p class="lede">I'm <b>Lalith Kumar U</b>. I build AI systems that touch real data, respect real constraints — and produce results people can trust.</p>
+      <div class="cta">
+        <a class="btn btn-lime" href="#askcm">See what I shipped ↓</a>
+        <a class="btn btn-ghost" href="#film">Watch the film ▶</a>
+      </div>
+    </div>
+    <div class="marquee" aria-label="Key results">
+      <div class="track">
+        <span>~2 HRS → UNDER 10 MIN</span><i>✦</i><span>₹2.75 → ₹0.44 / QUESTION</span><i>✦</i><span>39/39 ATTACKS REFUSED</span><i>✦</i><span>739 SQL FILES MIGRATED</span><i>✦</i><span>18.5B ROWS WATCHED</span><i>✦</i><span>7 TB → 970 GB</span><i>✦</i><span>DAYS → HOURS VALIDATION</span><i>✦</i>
+        <span>~2 HRS → UNDER 10 MIN</span><i>✦</i><span>₹2.75 → ₹0.44 / QUESTION</span><i>✦</i><span>39/39 ATTACKS REFUSED</span><i>✦</i><span>739 SQL FILES MIGRATED</span><i>✦</i><span>18.5B ROWS WATCHED</span><i>✦</i><span>7 TB → 970 GB</span><i>✦</i><span>DAYS → HOURS VALIDATION</span><i>✦</i>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ ASKCM (shipped) ============ -->
+  <section class="sec light" id="askcm">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sticker s-blue tilt-l">SHIPPED · IN USE</div>
+        <h2>AskCM <span class="muted">— data answers in minutes, not days.</span></h2>
+        <p class="sub">A multi-agent analytics platform for business teams at CreditMantri.</p>
+      </div>
+
+      <div class="star reveal" data-star>
+        <div class="star-tabs" role="tablist">
+          <button class="on" data-k="S">S · Situation</button>
+          <button data-k="T">T · Task</button>
+          <button data-k="A">A · Action</button>
+          <button data-k="R">R · Result</button>
+        </div>
+        <div class="star-body">
+          <div class="pane on" data-k="S"><p>Business teams needed numbers — and the <em>why</em> behind them. Getting them meant queuing on the data team: <b>up to ~2 days</b> of waiting, and a typical request took <b>about two hours</b>.</p></div>
+          <div class="pane" data-k="T"><p>Give teams trusted answers in minutes — <b>without</b> giving an AI unrestricted access to the database or ever exposing credentials.</p></div>
+          <div class="pane" data-k="A"><p>I evolved AskCM from a RAG text-to-SQL bot into a customised <b>LibreChat</b> deployment with my own <b>MCP server</b> over ClickHouse — eight approved tools (glossary search, <code>describe_table</code>, <code>run_query</code>, spend tracking…). Three specialist agents — <b>CFU, Referrals, ARS</b> — mirror the data team's business SPOCs. ~12 large tables were pre-joined into <b>6 golden tables</b>. Guardrails: read-only, table allowlist, audit log. Cost: model switching, prompt reduction, per-user budgets.</p></div>
+          <div class="pane" data-k="R"><p>A typical request went from <b>~2 hours to under 10 minutes</b>; cost per question from <b>₹2.75 to ₹0.44 (~85% lower)</b>. All <b>39/39</b> adversarial test queries refused, and a cross-check matched <b>453,702</b> logged-in users exactly.</p></div>
+        </div>
+      </div>
+
+      <!-- interactive architecture -->
+      <div class="arch reveal">
+        <svg viewBox="0 0 1100 360" class="arch-svg" role="img" aria-label="AskCM architecture: user, agents, MCP server, guardrails, ClickHouse, golden tables">
+          <defs>
+            <linearGradient id="flow" x1="0" x2="1"><stop offset="0" stop-color="#2864FF" /><stop offset="1" stop-color="#00D9FF" /></linearGradient>
+          </defs>
+          <path class="wire" id="w1" d="M120,180 C170,180 180,110 240,110" />
+          <path class="wire" id="w2" d="M120,180 L240,180" />
+          <path class="wire" id="w3" d="M120,180 C170,180 180,250 240,250" />
+          <path class="wire" id="w4" d="M360,180 L450,180" />
+          <path class="wire" id="w5" d="M680,180 L720,180" />
+          <path class="wire" id="w6" d="M830,180 L890,180" />
+          <path class="wire back" id="wb" d="M1000,250 C900,330 300,330 70,230" />
+          <circle class="pkt" r="7"><animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#w2" /></animateMotion></circle>
+          <circle class="pkt" r="7"><animateMotion dur="4s" begin="0.6s" repeatCount="indefinite"><mpath href="#w4" /></animateMotion></circle>
+          <circle class="pkt" r="7"><animateMotion dur="4s" begin="1.2s" repeatCount="indefinite"><mpath href="#w5" /></animateMotion></circle>
+          <circle class="pkt" r="7"><animateMotion dur="4s" begin="1.6s" repeatCount="indefinite"><mpath href="#w6" /></animateMotion></circle>
+          <circle class="pkt ok" r="7"><animateMotion dur="4s" begin="2.2s" repeatCount="indefinite"><mpath href="#wb" /></animateMotion></circle>
+
+          <g class="node" data-tip="Business users ask in plain English — no SQL."><rect x="20" y="140" width="100" height="80" rx="18" /><text x="70" y="176">USER</text><text x="70" y="198" class="t-s">asks</text></g>
+          <g class="node agent" data-tip="CFU agent — replicates the CFU business SPOC."><rect x="240" y="88" width="120" height="44" rx="14" /><text x="300" y="116">CFU</text></g>
+          <g class="node agent" data-tip="Referrals agent — routed when the question is about referrals."><rect x="240" y="158" width="120" height="44" rx="14" /><text x="300" y="186">REFERRALS</text></g>
+          <g class="node agent" data-tip="ARS agent — replicates the ARS business SPOC."><rect x="240" y="228" width="120" height="44" rx="14" /><text x="300" y="256">ARS</text></g>
+          <g class="node mcp" data-tip="MCP: the connection layer that lets agents use approved tools only — 8 of them."><rect x="450" y="110" width="230" height="140" rx="20" /><text x="565" y="150">MCP SERVER</text><text x="565" y="176" class="t-s">8 approved tools</text><text x="565" y="200" class="t-m">glossary · describe_table</text><text x="565" y="220" class="t-m">run_query · spend …</text></g>
+          <g class="node guard" data-tip="Guardrails: read-only, allowlisted tables, audit log. Credentials never reach the model. 39/39 attacks refused."><rect x="720" y="130" width="110" height="100" rx="20" /><text x="775" y="174">GUARD</text><text x="775" y="198" class="t-s">read-only</text></g>
+          <g class="node db" data-tip="ClickHouse over 6 golden tables pre-joined from ~12 large source tables."><rect x="890" y="110" width="190" height="140" rx="20" /><text x="985" y="150">CLICKHOUSE</text><text x="985" y="176" class="t-s">6 golden tables</text><text x="985" y="200" class="t-m">from ~12 sources</text></g>
+          <text x="560" y="330" class="t-ans">answer + the "why"  ✓</text>
+        </svg>
+        <div class="tip" role="status">Hover (or tap) a block to see what it does.</div>
+      </div>
+
+      <div class="metrics">
+        <div class="m reveal c-blue"><b><span class="lt">&lt;</span>10 min</b><span>typical request (was ~2 hrs)</span></div>
+        <div class="m reveal c-lime"><b>₹0.44</b><span>per question (was ₹2.75) · ~85% cheaper</span></div>
+        <div class="m reveal c-orange"><b>39/39</b><span>adversarial test queries refused</span></div>
+        <div class="m reveal c-ink"><b>453,702</b><span>logged-in users — exact match vs real data</span></div>
+      </div>
+      <p class="stack reveal">LibreChat · MCP · ClickHouse · RAG · LLMs · SQL · prompt engineering</p>
+    </div>
+  </section>
+
+  <!-- ============ MORE WORK ============ -->
+  <section class="sec dark" id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sticker s-orange tilt-r">MORE SYSTEMS</div>
+        <h2>Different problems. <span class="hl-c">Different systems.</span></h2>
+        <p class="sub">Tap a card to flip it — every one tells its STAR story.</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal" tabindex="0" style="--acc:#FF6238">
+          <div class="face front">
+            <div class="badge-dev">● IN DEVELOPMENT</div>
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><circle cx="100" cy="60" r="44" class="ring" /><circle cx="100" cy="60" r="10" class="core" /><g class="orbit"><circle cx="144" cy="60" r="7" /><circle cx="56" cy="60" r="7" /><circle cx="100" cy="16" r="7" /><circle cx="100" cy="104" r="7" /><circle cx="131" cy="29" r="7" /><circle cx="69" cy="91" r="7" /></g></svg>
+            <h3>Multi-Agent Job Application Platform</h3>
+            <p>7 agents. Verified claims. A human approves every submission.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S</b> Tailoring resumes with AI can quietly invent claims.</p>
+            <p><b>T</b> Automate research + prep end to end; keep a human in control.</p>
+            <p><b>A</b> 7 agents in FastAPI (orchestrator Beno + 6 specialists). Locked master resume, claim-by-claim audit, approval voided on any edit, Gemini → Groq → OpenRouter fallback.</p>
+            <p><b>R</b> In development — a safe, verifiable architecture designed for a ₹0 API budget. No outcomes claimed yet.</p>
+          </div>
+        </article>
+
+        <article class="card reveal" tabindex="0" style="--acc:#2864FF">
+          <div class="face front">
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><rect x="16" y="30" width="44" height="60" rx="8" class="box" /><rect x="140" y="30" width="44" height="60" rx="8" class="box b2" /><path d="M64,60 L136,60" class="dash" /><circle cx="100" cy="60" r="16" class="ring" /></svg>
+            <h3>PostgreSQL → ClickHouse SQL Migration</h3>
+            <p>739 SQL files moved — without changing what any report means.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S</b> A large MIS codebase had to change databases.</p>
+            <p><b>T</b> Make conversion repeatable, rule-based and auditable.</p>
+            <p><b>A</b> Multi-agent pipeline (OpenAI API) with a defined rule set; a validator agent checks every file; four states — CONVERTED · REVIEW · FAILED · SKIPPED.</p>
+            <p><b>R</b> 739 files · 121 folders · 231 reports · ~3.45M characters. Found 5 undefined custom functions, source bugs and behaviour differences (e.g. divide-by-zero → NULL).</p>
+          </div>
+        </article>
+
+        <article class="card reveal" tabindex="0" style="--acc:#D9FF43">
+          <div class="face front">
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><rect x="20" y="24" width="60" height="72" rx="8" class="box" /><rect x="120" y="24" width="60" height="72" rx="8" class="box b2" /><path d="M86,60 L114,60" class="dash" /><text x="100" y="114" class="ico-t">DATA DECIDES</text></svg>
+            <h3>Migration Validation Agent</h3>
+            <p>The LLM explains. The data decides.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S</b> Validating one migrated report by hand could take days.</p>
+            <p><b>T</b> Fast, repeatable checks with one source of truth.</p>
+            <p><b>A</b> Runs each production R report on PostgreSQL and ClickHouse, pulls both emailed outputs via Microsoft Graph, compares structure, rows, values and aggregates (HTML, CSV, multi-sheet XLSX). A freshness gate separates CDC gaps from logic errors; gated rollout.</p>
+            <p><b>R</b> Validation per migrated MIS: days → hours. The LLM never decides correctness.</p>
+          </div>
+        </article>
+
+        <article class="card reveal" tabindex="0" style="--acc:#00D9FF">
+          <div class="face front">
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><g class="dots"></g></svg>
+            <h3>Migration Monitoring at Scale</h3>
+            <p>814 table jobs · 14 schemas · ~18.5B rows, watched.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S</b> A migration this size can fail quietly.</p>
+            <p><b>T</b> Make progress, coverage and failures visible.</p>
+            <p><b>A</b> Row-count checks, sampled-record validation, error classifier, watchdog and alerting across 814 jobs and 14 schemas.</p>
+            <p><b>R</b> Warehouse ~7 TB → ~970 GB (~7× smaller). One real MIS query ran ~39× faster — one measured query, not every query.</p>
+          </div>
+        </article>
+
+        <article class="card reveal" tabindex="0" style="--acc:#2864FF">
+          <div class="face front">
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><path d="M20,30 h70 M20,48 h50 M20,66 h64 M20,84 h40" class="code" /><path d="M100,60 L120,60" class="dash" /><rect x="128" y="22" width="56" height="76" rx="8" class="box b2" /></svg>
+            <h3>MIS Explainer</h3>
+            <p>Hard-to-read R/SQL → plain English, traced to source.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S</b> Report logic was locked in R and SQL code.</p>
+            <p><b>T</b> Explanations business users can read — faithful to the code.</p>
+            <p><b>A</b> FastAPI + React tool that parses the codebase and drafts explanations with LLM APIs; a grounding validator checks each one against its source.</p>
+            <p><b>R</b> Run across all reports, with the business logic captured correctly.</p>
+          </div>
+        </article>
+
+        <article class="card reveal" tabindex="0" style="--acc:#FF6238">
+          <div class="face front">
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><circle cx="60" cy="60" r="22" class="ring" /><path d="M86,60 L112,60" class="dash" /><rect x="118" y="20" width="60" height="22" rx="6" class="box" /><rect x="118" y="49" width="60" height="22" rx="6" class="box" /><rect x="118" y="78" width="60" height="22" rx="6" class="box" /></svg>
+            <h3>LLM-Generated MIS</h3>
+            <p>One API call a day → Excel, email, dashboard. Numbers checked.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S</b> Recurring management reports were needed in several formats.</p>
+            <p><b>T</b> Use an LLM without letting it invent figures.</p>
+            <p><b>A</b> R + Llama 3.3 70B via Groq. Only aggregates reach the model; every number is validated against source, with a rule-based fallback.</p>
+            <p><b>R</b> One API call per day serves Excel, email and the dashboard.</p>
+          </div>
+        </article>
+
+        <article class="card reveal" tabindex="0" style="--acc:#D9FF43">
+          <div class="face front">
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><path d="M14,70 H186" class="dash" /><rect x="20" y="52" width="28" height="28" rx="6" class="box mover" /><polygon points="150,44 164,52 164,68 150,76 136,68 136,52" class="hex" /></svg>
+            <h3>MLOps &amp; Data Pipelines</h3>
+            <p>Monitored. Automated. Delivered intact.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S/T</b> Models and scheduled workflows must keep running and deliver intact.</p>
+            <p><b>A</b> Integrated MLflow and model monitoring, built Streamlit campaign automation, maintain scheduled MIS and partner pipelines with SHA-256 hashing and AWS S3 delivery.</p>
+            <p><b>R</b> Working, maintained capabilities — no invented metrics.</p>
+          </div>
+        </article>
+
+        <article class="card reveal" tabindex="0" style="--acc:#00D9FF">
+          <div class="face front">
+            <svg viewBox="0 0 200 120" class="ico" aria-hidden="true"><rect x="16" y="36" width="44" height="44" rx="4" class="box" /><g class="layers"><rect x="76" y="30" width="6" height="56" /><rect x="88" y="34" width="6" height="48" /><rect x="100" y="38" width="6" height="40" /></g><circle cx="140" cy="44" r="6" class="core" /><circle cx="140" cy="62" r="6" class="core" /><circle cx="140" cy="80" r="6" class="core" /><rect x="160" y="54" width="28" height="12" rx="3" class="box b2" /></svg>
+            <h3>Intel · Data Science Intern</h3>
+            <p>Led a team building a CNN fashion classifier.</p>
+            <span class="flip">flip ↻</span>
+          </div>
+          <div class="face back">
+            <p><b>S/T</b> Automatically classify fashion items from images (Fashion-MNIST).</p>
+            <p><b>A</b> Led the team building a CNN image classifier — in PyTorch, then TensorFlow.</p>
+            <p><b>R</b> Earned the Intel internship certification.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRINCIPLE ============ -->
+  <section class="sec principle">
+    <div class="wrap reveal">
+      <p class="big">The LLM <span class="hl-c">explains.</span><br />The data <span class="hl-l">decides.</span></p>
+      <p class="sub">My rule for every system: AI must be useful, reliable — and accountable to the real world.</p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="sec light" id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sticker s-lime tilt-l">ENGINEERING RANGE</div>
+        <h2>Five disciplines, <span class="muted">one engineer.</span></h2>
+      </div>
+      <div class="skills">
+        <div class="sk reveal" style="--acc:#2864FF"><h4>Programming</h4><ul><li>Python</li><li>SQL</li><li>R</li></ul></div>
+        <div class="sk reveal" style="--acc:#00A8C6"><h4>GenAI &amp; Agents</h4><ul><li>LLMs</li><li>RAG</li><li>Prompt engineering</li><li>Text-to-SQL</li><li>Multi-agent orchestration</li><li>MCP</li><li>LibreChat</li><li>Pydantic</li><li>Guardrails</li><li>Output validation</li><li>Model routing &amp; fallback</li><li>LLM cost optimisation</li></ul></div>
+        <div class="sk reveal" style="--acc:#FF6238"><h4>Data Engineering</h4><ul><li>PostgreSQL</li><li>ClickHouse</li><li>SQLite</li><li>SQLGlot</li><li>CDC</li><li>ETL pipelines</li><li>Data warehousing</li><li>pandas</li><li>SQLAlchemy</li><li>AWS S3</li></ul></div>
+        <div class="sk reveal" style="--acc:#2864FF"><h4>Backend &amp; Dev</h4><ul><li>FastAPI</li><li>React</li><li>Streamlit</li><li>Docker</li><li>NGINX</li><li>Microsoft Graph API</li><li>Git</li><li>GitLab</li></ul></div>
+        <div class="sk reveal" style="--acc:#7BA300"><h4>ML &amp; MLOps</h4><ul><li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>XGBoost</li><li>MLflow</li><li>Model monitoring</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PATH ============ -->
+  <section class="sec dark" id="path">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sticker s-blue tilt-r">THE PATH SO FAR</div>
+        <h2>From models to <span class="hl-c">systems.</span></h2>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="when">2021 – 2025</span><b>B.Tech, Artificial Intelligence &amp; Data Science</b><span>Rajalakshmi Institute of Technology · CGPA 8.0</span></li>
+        <li class="reveal"><span class="when">Internship</span><b>Intel · Data Science Intern</b><span>CNN on Fashion-MNIST · Intel certification</span></li>
+        <li class="reveal"><span class="when">July 2025 – Present</span><b>CreditMantri · Management Trainee, Data Science</b><span>AskCM · SQL migration · validation · monitoring · MIS · MLOps</span></li>
+        <li class="reveal now"><span class="when">Now</span><b>Multi-Agent Job Application Platform</b><span>Independent project · ongoing advanced AI coursework</span><em class="badge-dev">● IN DEVELOPMENT</em></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FILM ============ -->
+  <section class="sec light" id="film">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sticker s-orange tilt-l">THE FILM</div>
+        <h2>Prefer to watch? <span class="muted">90 seconds.</span></h2>
+      </div>
+      <div class="film reveal">
+        <video controls preload="metadata" playsinline poster="assets/film-poster.jpg">
+          <source src="assets/film-highlight.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="note reveal">3D visualisations of real systems — not product screenshots. No confidential data shown.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p class="big-foot">BUILD. <span class="hl-l">VALIDATE.</span> <span class="hl-c">AUTOMATE.</span> <span class="hl-o">SCALE.</span></p>
+    <p>Lalith Kumar U · AI Engineer · GenAI &amp; Agentic Systems · Data Engineering · Chennai, India</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
